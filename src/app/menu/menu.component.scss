@@ -1,5 +1,6 @@
 .menu {
-  height: 50px;
+  // height: 50px;
+  height: 2.5vw;
   width: 100vw;
   background-color: #404254;
   position: fixed;
@@ -13,16 +14,21 @@
 
   .logo {
     position: fixed;
-    left: 0px;
+    // padding-left: 16px;
+    // padding-top: 2px;
+    // left: 0px;
+    // padding-left: .5vw;
+    // padding-top: .5vw;
+    left: .5vw;
+    top: .2vh;
     text-decoration: none;
     color: white;
     // font-family: "Helvetica Neue", sans-serif, arial;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     letter-spacing: 5px;
-    font-size: 2.5em;
-    padding-left: 16px;
-    padding-top: 2px;
+    // font-size: 2.5em;
+    font-size: 2vw;
     cursor: pointer;
   }
 
@@ -34,7 +40,6 @@
     align-items: center;
     .action {
       // padding: 0 50px 0 50px;
-      width: 200px;
       height: 100%;
       display: flex;
       justify-content: center;
@@ -42,7 +47,10 @@
       color: white;
       font-family: 'Roboto', sans-serif;
       // font-family: "Helvetica Neue", sans-serif, arial;
-      font-size: 150%;
+      // font-size: 150%;
+      // width: 200px;
+      width: 10vw;
+      font-size: 1vw;
       // font-weight: bold;
       cursor: pointer;
     }

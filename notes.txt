@@ -1,0 +1,1 @@
+launch to github: ng build --prod --output-path docs --base-href "https://www.sapana.space"

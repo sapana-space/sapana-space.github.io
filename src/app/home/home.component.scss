@@ -4,7 +4,7 @@
   height: 100%;
   z-index: 1;
   .splash {
-    width: 100%;
+    // width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,8 +12,9 @@
     margin-top: -50px;
     .logo {
       // height: 500px;
+      // width: 80%;
       width: 80%;
-      max-width: 90%;
+      // max-width: 90%;
       user-select: none;
     }
   }
@@ -46,35 +47,37 @@
   }
 
   .about {
-    width: 100%;
+    // width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     // height: 100vh;
-    // margin-top: -50px;
+    // margin-top: 2vw;
 
     .about_text {
-      margin-top: 20px;
+      // margin-top: 20px;
       // font-family: "Helvetica Neue", sans-serif, arial;
       font-family: 'Roboto', sans-serif;
-      font-size: 300%;
+      // font-size: 300%;
+      font-size: 3.5vw;
       font-weight: bold;
     }
 
     .headshotsContainer {
-      margin-top: 30px;
+      // margin-top: 30px;
+      margin-top: 2vw;
       // padding-left: 150px;
       // padding-right: 150px;
-      margin-right: 20%;
-      margin-left: 20%;
+      margin-right: 9vw;
+      margin-left: 9vw;
       display: flex;
       flex-wrap: wrap;
       align-content: space-between;
       justify-content: space-around;
   
       .headshot{
-        height: 300px;
+        height: 20vw;
         padding: 15px;
         display: flex;
         flex-direction: column;
@@ -88,13 +91,15 @@
           align-items: center;
           color: #003858;
           font-family: "Helvetica Neue", sans-serif, arial;
-          font-size: 150%;
+          // font-size: 150%;
+          font-size: 1.5vw;
           font-weight: bold;
         }
     
         .headshot_img {
-          height: 250px;
-          width: auto;
+          // height: 250px;
+          height: 15vw;
+          // width: auto;
           user-select: none;
           border-radius: 50%;
         }
@@ -102,25 +107,31 @@
     }
 
     .descriptionContainer {
-      height: 500px;
-      margin-top: 50px;
-      padding-left: 200px;
-      padding-right: 200px;
+      // height: 500px;
+      // margin-top: 50px;
+      margin-top: 2vw;
+      // padding-left: 200px;
+      // padding-right: 200px;
+      padding-left: 5vw;
+      padding-right: 5vw;
       display: flex;
       flex-direction: column;
       align-content: space-between;
       justify-content: space-around;
 
       .descriptionText {
+        margin-top: 5vw;
         text-align: center;
         font-family: "Helvetica Neue", sans-serif, arial;
-        font-size: 200%;
+        // font-size: 200%;
+        font-size: 2.5vw;
       }
 
       .descriptionLink {
         text-align: center;
         font-family: "Helvetica Neue", sans-serif, arial;
-        font-size: 200%;
+        // font-size: 200%;
+        font-size: 2.5vw;
         color: #56CCF2;
         font-weight: bold;
       }
@@ -132,19 +143,22 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    // margin-top: 50px;
+    margin-top: 10vw;
 
     .previous_work_text {
-      margin-top: 20px;
+      // margin-top: 20px;
       font-family: "Helvetica Neue", sans-serif, arial;
-      font-size: 300%;
+      // font-size: 300%;
+      font-size: 3.5vw;
       font-weight: bold;
     }
 
     .downloadContainer {
       width: 100%;
       height: auto;
-      margin-top: 50px;
+      // margin-top: 50px;
+      margin-top: 3vw;
       display: flex;
       flex-wrap: wrap;
       align-content: space-around;
@@ -158,23 +172,29 @@
         justify-content: center;
         align-items: center;
         color: white;
+        text-align: center;
         font-family: "Helvetica Neue", sans-serif, arial;
-        font-size: 350%;
+        // font-size: 350%;
+        font-size: 4vw;
         font-weight: bold;
       }
 
       .download_subtitle {
-        margin-top: 20px;
+        // margin-top: 20px;
+        margin-top: 2vw;
         display: flex;
         justify-content: center;
         align-items: center;
         color: white;
+        text-align: center;
         font-family: "Helvetica Neue", sans-serif, arial;
-        font-size: 200%;
-        font-weight: bold;
+        // font-size: 200%;
+        font-size: 3vw;
+        // font-weight: bold;
       }
 
       .download_list {
+        margin-top: 2vw;
         width: 100%;
         display: flex;
         flex-wrap: wrap;
@@ -183,31 +203,36 @@
         justify-content: space-around;
 
         .download_item {
-          height: 300px;
-          padding: 15px;
+          // height: 300px;
+          // height: 20vw;
+          // padding: 15px;
+          padding: 1vw;
           display: flex;
           flex-direction: column;
           flex-wrap: wrap;
           align-content: space-between;
           justify-content: space-around;
+          filter: grayscale(100%) blur(5px);
     
           .download_text {
+            padding: 1vw;
             display: flex;
             justify-content: center;
             align-items: center;
             color: white;
             text-align: center;
             font-family: "Helvetica Neue", sans-serif, arial;
-            font-size: 150%;
+            // font-size: 150%;
+            font-size: 2vw;
             font-weight: bold;
           }
       
           .download_icon {
             // margin-right: 30px;
-            height: 200px;
-            width: auto;
+            // height: 200px;
+            height: 20vw;
+            // width: auto;
             user-select: none;
-            filter: grayscale(100%) blur(5px);
           }
         }
       }
@@ -220,23 +245,23 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 10vw;
 
     .contact_us_text {
-      margin-top: 20px;
       font-family: "Helvetica Neue", sans-serif, arial;
-      font-size: 300%;
+      // font-size: 300%;
+      font-size: 3.5vw;
       font-weight: bold;
     }
 
     .mailContainer {
-      padding: 50px;
+      padding: 5vw;
       display: flex;
       justify-content: center;
       align-items: center;
 
       .mail_icon {
-        height: 100px;
+        height: 5vw;
         width: auto;
         user-select: none;
       }
@@ -247,7 +272,7 @@
         // align-items: center;
         color: #2D9CDB;
         font-family: "Helvetica Neue", sans-serif, arial;
-        font-size: 200%;
+        font-size: 2.5vw;
         font-weight: bold;
       }
     }
