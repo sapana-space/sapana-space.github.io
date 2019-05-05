@@ -11,8 +11,9 @@
     height: 100vh;
     margin-top: -50px;
     .logo {
-      height: 400px;
-      width: auto;
+      // height: 500px;
+      width: 80%;
+      max-width: 90%;
       user-select: none;
     }
   }
@@ -25,7 +26,7 @@
     width: 100%;
     text-align: center;
     .downCarrot_img {
-      width: 100px;
+      width: 5%;
       cursor: pointer;
       transition: 400ms ease-in-out;
       &:hover {
@@ -144,6 +145,7 @@
       flex-wrap: wrap;
       align-content: space-between;
       justify-content: space-around;
+      flex-direction: column;
       background: #404254;
 
       .download_title {
@@ -169,11 +171,10 @@
       }
 
       .download_list {
-        width: 100%;
-        margin-top: 20px;
-        padding: 100px;
+        padding: 10px;
         display: flex;
         flex-wrap: wrap;
+        flex-direction: row;
         align-content: space-between;
         justify-content: space-around;
 
@@ -201,6 +202,7 @@
             height: 250px;
             width: auto;
             user-select: none;
+            filter: grayscale(100%) blur(5px);
           }
         }
       }
