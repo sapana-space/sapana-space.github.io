@@ -3,6 +3,8 @@
   width: 100%;
   height: 100%;
   z-index: 1;
+
+  
   .splash {
     // width: 100vw;
     display: flex;
@@ -16,6 +18,18 @@
       width: 80%;
       // max-width: 90%;
       user-select: none;
+    }
+  }
+
+  @media only screen and (max-width: 1026px) {
+    // .logo {
+    //   display: none;
+    // }
+    .splash {
+      height: 32vh;
+    }
+    .downCarrotContainer {
+      display: none;
     }
   }
 

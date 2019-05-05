@@ -1,7 +1,7 @@
 .menu {
-  // height: 50px;
-  height: 2.5vw;
-  width: 100vw;
+  height: 50px;
+  // height: 2.5vw;
+  width: 100%;
   background-color: #404254;
   position: fixed;
   top: 0;
@@ -12,6 +12,12 @@
   user-select: none;
   z-index: 2;
 
+  @media only screen and (max-width: 1026px) {
+    .logo {
+      display: none;
+    }
+  }
+
   .logo {
     position: fixed;
     // padding-left: 16px;
@@ -19,16 +25,16 @@
     // left: 0px;
     // padding-left: .5vw;
     // padding-top: .5vw;
-    left: .5vw;
-    top: .2vh;
+    left: .5%;
+    top: .2%;
     text-decoration: none;
     color: white;
     // font-family: "Helvetica Neue", sans-serif, arial;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     letter-spacing: 5px;
-    // font-size: 2.5em;
-    font-size: 2vw;
+    font-size: 2.5em;
+    // font-size: 2vw;
     cursor: pointer;
   }
 
@@ -38,6 +44,7 @@
     justify-content: center;
     min-width: 50%;
     align-items: center;
+
     .action {
       // padding: 0 50px 0 50px;
       height: 100%;
@@ -49,8 +56,11 @@
       // font-family: "Helvetica Neue", sans-serif, arial;
       // font-size: 150%;
       // width: 200px;
-      width: 10vw;
-      font-size: 1vw;
+      text-align: center;
+      width: 20%;
+      margin-left: 10px;
+      margin-right: 10px;
+      font-size: 100%;
       // font-weight: bold;
       cursor: pointer;
     }
