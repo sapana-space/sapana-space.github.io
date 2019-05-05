@@ -56,15 +56,18 @@
 
     .about_text {
       margin-top: 20px;
-      font-family: "Helvetica Neue", sans-serif, arial;
+      // font-family: "Helvetica Neue", sans-serif, arial;
+      font-family: 'Roboto', sans-serif;
       font-size: 300%;
       font-weight: bold;
     }
 
     .headshotsContainer {
       margin-top: 30px;
-      padding-left: 100px;
-      padding-right: 100px;
+      // padding-left: 150px;
+      // padding-right: 150px;
+      margin-right: 20%;
+      margin-left: 20%;
       display: flex;
       flex-wrap: wrap;
       align-content: space-between;
@@ -144,7 +147,7 @@
       margin-top: 50px;
       display: flex;
       flex-wrap: wrap;
-      align-content: center;
+      align-content: space-around;
       justify-content: space-around;
       flex-direction: column;
       background: #404254;
@@ -172,11 +175,11 @@
       }
 
       .download_list {
-        padding: 10px;
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        align-content: center;
+        align-content: space-around;
         justify-content: space-around;
 
         .download_item {
