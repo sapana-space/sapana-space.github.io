@@ -1,0 +1,29 @@
+.footerContainer {
+
+  width: 100%;
+  height: 300px;
+  color: white;
+  font-weight: bold;
+  font-family: "Helvetica Neue", sans-serif, arial;
+  background-image: url(../../assets/earth.jpeg);
+  background-position: 25% 35%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .ctext {
+      padding-top: 2em;
+  }
+  .rtext {
+    padding-top: .75em;
+  }
+  .dtext {
+    font-size: .8em;
+    margin-top: 175px;
+    text-align: center;
+    font-weight: lighter;
+    a {
+      color: white;
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.homeContainer {
+  margin-top: 60px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  .splash {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: -50px;
+    .logo {
+      height: 500px;
+      width: auto;
+      user-select: none;
+    }
+  }
+  .downCarrotContainer {
+    position: absolute;
+    bottom: 32px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    .downCarrot {
+      font-size: 3em;
+      cursor: pointer;
+      transition: 400ms ease-in-out;
+      &:hover {
+        transform: translateY(16px);
+        transition: 600ms ease-in-out;
+      }
+    }
+  }
+}
