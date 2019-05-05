@@ -7,10 +7,14 @@
   left: 0;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   user-select: none;
   z-index: 2;
+
   .logo {
+    position: fixed;
+    left: 0px;
+    text-decoration: none;
     color: white;
     font-family: "Helvetica Neue", sans-serif, arial;
     font-weight: 300;
@@ -19,6 +23,7 @@
     padding-left: 16px;
     cursor: pointer;
   }
+
   .actionsContainer {
     display: flex;
     flex-direction: row;
@@ -26,13 +31,16 @@
     min-width: 50%;
     align-items: center;
     .action {
-      padding: 0 64px 0 64px;
+      // padding: 0 50px 0 50px;
+      width: 200px;
       height: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
       color: white;
       font-family: "Helvetica Neue", sans-serif, arial;
+      font-size: 150%;
+      font-weight: bold;
       cursor: pointer;
     }
   }
