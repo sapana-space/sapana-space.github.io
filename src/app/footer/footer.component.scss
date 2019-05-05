@@ -1,0 +1,39 @@
+.footerContainer {
+  width: 100%;
+  background: black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .footer_text {
+    margin-top: 75px;
+    margin-bottom: 75px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    font-family: "Helvetica Neue", sans-serif, arial;
+  }
+
+  .footer_img {
+    width: 100%;
+
+  }
+
+  // .ctext {
+  //     padding-top: 2em;
+  // }
+  // .rtext {
+  //   padding-top: .75em;
+  // }
+  // .dtext {
+  //   font-size: 1em;
+  //   margin-top: 175px;
+  //   text-align: center;
+  //   font-weight: lighter;
+  //   a {
+  //     color: white;
+  //     text-decoration: underline;
+  //   }
+  // }
+}
