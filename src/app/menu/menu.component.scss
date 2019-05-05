@@ -1,0 +1,47 @@
+.menu {
+  height: 50px;
+  width: 100vw;
+  background-color: #404254;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  display: flex;
+  justify-content: center;
+  user-select: none;
+  z-index: 2;
+
+  .logo {
+    position: fixed;
+    left: 0px;
+    text-decoration: none;
+    color: white;
+    font-family: "Helvetica Neue", sans-serif, arial;
+    font-weight: 300;
+    letter-spacing: 5px;
+    font-size: 2.5em;
+    padding-left: 16px;
+    cursor: pointer;
+  }
+
+  .actionsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    min-width: 50%;
+    align-items: center;
+    .action {
+      // padding: 0 50px 0 50px;
+      width: 200px;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-family: "Helvetica Neue", sans-serif, arial;
+      font-size: 150%;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+}
