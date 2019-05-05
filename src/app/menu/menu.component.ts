@@ -19,12 +19,12 @@ export class MenuComponent implements OnInit {
       selected: false
     },
     {
-      name: 'Previous Work',
+      name: 'Research',
       link: 'previous_work',
       selected: false
     },
     {
-      name: 'Contact Us',
+      name: 'Contact',
       link: 'contact',
       selected: false
     }
