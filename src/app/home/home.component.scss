@@ -169,6 +169,9 @@
         margin-right: 1vw;
         margin-left: 1vw;
       }
+      .about_text {
+        font-size: 5vw;
+      }
     }
 
     .descriptionContainer {
@@ -217,6 +220,12 @@
       font-size: 3vw;
       font-weight: bold;
       color: #1c1f29; 
+    }
+
+    @media only screen and (max-width: 1026px) {
+      .previous_work_text {
+        font-size: 5vw;
+      }
     }
 
     .downloadContainer {
@@ -329,6 +338,13 @@
       font-weight: bold;
     }
 
+    @media only screen and (max-width: 1026px) {
+      .previous_work_text {
+        font-size: 5vw;
+      }
+    }
+
+
     .mailContainer {
       padding: 5vw;
       display: flex;
@@ -350,6 +366,15 @@
         font-size: 2vw;
         font-weight: bold;
       }
+      @media only screen and (max-width: 1026px) {
+        .mail_icon{
+          height: 7vw;
+        }
+        .mail_text {
+          font-size: 4vw;
+        }
+      }
+  
     }
   }
 }
