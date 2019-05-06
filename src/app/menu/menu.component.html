@@ -2,7 +2,10 @@
   
   <a class="logo" href="http://sapana.space">SAPANA</a>
   <div class="actionsContainer">
-    <div class="action" [ngStyle]="{'backgroundColor': action.selected ? '#ffffff78': 'inherit'}" *ngFor="let action of menuActions">
+    <!-- <div class="action" [ngStyle]="{'backgroundColor': action.selected ? '#ffffff78': 'inherit'}" *ngFor="let action of menuActions">
+      {{action.name}}
+    </div> -->
+    <div class="action" (click)="scroll(action, action.link)" [ngStyle]="{'backgroundColor': action.selected ? '#ffffff78': 'inherit'}" *ngFor="let action of menuActions">
       {{action.name}}
     </div>
   </div>

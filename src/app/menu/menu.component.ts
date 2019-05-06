@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+// import {HomeComponent} from '../home/home.component';
 
 @Component({
   selector: 'app-menu',
@@ -10,26 +11,49 @@ export class MenuComponent implements OnInit {
   menuActions: any[] = [
     {
       name: 'Home',
-      link: 'home',
-      selected: true
+      link: 'home_elem',
+      selected: false
     },
     {
       name: 'About',
-      link: 'about',
+      link: 'about_elem',
       selected: false
     },
     {
       name: 'Research',
-      link: 'previous_work',
+      link: 'research_elem',
       selected: false
     },
     {
       name: 'Contact',
-      link: 'contact',
+      link: 'contact_elem',
       selected: false
     }
   ];
   constructor() { }
   ngOnInit() {
+  }
+
+   
+
+  scroll(action, target) {
+
+    var scrollTimeout: any;
+    addEventListener('scroll', function(e) {
+      clearTimeout(scrollTimeout);
+      scrollTimeout = setTimeout(function() {
+        action.selected = false;
+      }, 100);
+    }); 
+
+    this.menuActions.forEach(element => {
+      element.selected = false;
+    });
+
+    action.selected = true;
+    var el = document.getElementById(target);
+    el.scrollIntoView({behavior: "smooth", block: "start"})
+
+    
   }
 }
