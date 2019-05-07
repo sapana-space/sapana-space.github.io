@@ -84,9 +84,11 @@
       margin-right: 33vw;
       margin-left: 33vw;
       margin-top: 3vw;
+      // border: 2px #15161a solid;
 
       .modal_display {
         height: 100%;
+        border-spacing: 10px;
         display: flex;
         flex-direction: column;
         align-content: center;
