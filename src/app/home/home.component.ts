@@ -40,7 +40,7 @@ export class HomeComponent implements OnInit {
   ],
     kimFace: [
       'Kimberly DeVore', 
-      'Kim is a mechanical engineering master’s student. She is currently employed at the National Institute of Standards and Technology (NIST) where she performs a wide variety of functions.',
+      'Kim is a mechanical engineering master’s student. She is currently employed at Boulder Environmental Sciences & Technology where she performs a wide variety of functions.',
       '../../assets/kim.jpg'
     ],
     meerFace: [
