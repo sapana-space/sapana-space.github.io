@@ -9,45 +9,58 @@
       About Us
     </p>
 
-    <div class="headshotsContainer">
-      <div class="headshot">
-          <img draggable="false" class="headshot_img" src="../../assets/tim.jpg" alt="Timothy Passmore, PhD">
+    <div class="modal" id="modall">
+      <div class="modal_display">
+
+          <img draggable="false" (click)="returnButton()" class="headshot_detail" src={{imageLink}} alt={{name}}><br>
+
+          <p class="name">{{name}}</p><br>
+          <p class="description">{{description}}</p><br>
+
+          <button (click)="returnButton()">Back</button>
+      </div>
+    </div>
+
+    <div class="headshotsContainer" id="headshotsCont">
+
+      <div class="headshot" id="timFace">
+          <img draggable="false" (click)="personPressed('timFace')" class="headshot_img" src="../../assets/tim.jpg" alt="Timothy Passmore">
           <p class="headshot_text">Tim Passmore, PhD</p>
           <p class="headshot_subtext">Strategy</p>
           <p class="headshot_subsubtext">Political Science</p>
       </div>
-      <div class="headshot">
-        <img draggable="false" class="headshot_img" src="../../assets/akhil.png" alt="Akhil Rao, PhD">
+      <div class="headshot" id="akhilFace">
+        <img draggable="false" (click)="personPressed('akhilFace')" class="headshot_img" src="../../assets/akhil.png" alt="Akhil Rao">
         <p class="headshot_text">Akhil Rao, PhD</p>
         <p class="headshot_subtext">Policy</p>
         <p class="headshot_subsubtext">Economics</p>
       </div>
-      <div class="headshot">
-          <img draggable="false" class="headshot_img" src="../../assets/daniel.jpg" alt="Daniel Scott">
-          <p class="headshot_text">Daniel Scott</p>
+      <div class="headshot" id="danielFace">
+          <img draggable="false" (click)="personPressed('danielFace')" class="headshot_img" src="../../assets/daniel.jpg" alt="Daniel Scott">
+          <p class="headshot_text">Daniel Scott</p> 
           <p class="headshot_subtext">Operations</p>
           <p class="headshot_subsubtext">Computer Science & Business</p>
       </div>
-      <div class="headshot">
-          <img draggable="false" class="headshot_img" src="../../assets/britnee.jpg" alt="Britnee Leopold">
+      <div class="headshot" id="britneeFace">
+          <img draggable="false" (click)="personPressed('britneeFace')" class="headshot_img" src="../../assets/britnee.jpg" alt="Britnee Leopold">
           <p class="headshot_text">Britnee Leopold</p>
           <p class="headshot_subtext">Public Relations</p>
           <p class="headshot_subsubtext">Aerospace Engineering</p>
       </div>
-      <div class="headshot">
-          <img draggable="false" class="headshot_img" src="../../assets/matt.jpg" alt="Matthew Roberts">
+      <div class="headshot" id="mattFace">
+          <img draggable="false" (click)="personPressed('mattFace')" class="headshot_img" src="../../assets/matt.jpg" alt="Matthew Roberts">
           <p class="headshot_text">Matt Roberts</p>
           <p class="headshot_subtext">Research</p>
           <p class="headshot_subsubtext">Mechanical Engineering</p>
       </div>
-      <div class="headshot">
-          <img draggable="false" class="headshot_img" src="../../assets/kim.jpg" alt="Kimberly DeVore">
+      <div class="headshot" id="kimFace">
+          <img draggable="false" (click)="personPressed('kimFace')" class="headshot_img" src="../../assets/kim.jpg" alt="Kimberly DeVore">
           <p class="headshot_text">Kimberly DeVore</p>
           <p class="headshot_subtext">Product Development</p>
           <p class="headshot_subsubtext">Mechanical Engineering</p>
       </div>
-      <div class="headshot">
-          <img draggable="false" class="headshot_img" src="../../assets/meer.jpg" alt="Meer Baker">
+      <div class="headshot" id="meerFace">
+          <img draggable="false" (click)="personPressed('meerFace')" class="headshot_img" src="../../assets/meer.jpg" alt="Meer Baker">
           <p class="headshot_text">Meer Baker</p>
           <p class="headshot_subtext">Product Development</p>
           <p class="headshot_subsubtext">Aerospace Engineering</p>
@@ -123,5 +136,6 @@
   </div>
 
 </div>
+
 <app-footer></app-footer>
 

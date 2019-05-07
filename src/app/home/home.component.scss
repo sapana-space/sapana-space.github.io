@@ -4,7 +4,6 @@
   height: 100%;
   z-index: 1;
 
-  
   .splash {
     // width: 100vw;
     display: flex;
@@ -80,7 +79,73 @@
       color: #1c1f29; 
     }
 
+    .modal {
+      display: none;
+      margin-right: 33vw;
+      margin-left: 33vw;
+      margin-top: 3vw;
+
+      .modal_display {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: space-between;
+        position: relative; 
+        
+        .headshot_detail {
+          align-self: center;
+          height: 20vw;
+          cursor: pointer;
+          user-select: none;
+          border-radius: 50%;
+        }
+  
+        .name {
+          text-align: center;
+          font-family: 'Roboto', sans-serif;
+          font-size: 2vw;
+          font-weight: bold;
+        }
+
+        .description {
+          text-align: center;
+          font-family: 'Roboto', sans-serif;
+          font-size: 1vw;
+        }
+
+        @media only screen and (max-width: 1026px) {
+          .headshot_detail {
+            height: 30vw;
+          }
+          .name {
+            font-size: 3.3vw;
+          }
+          .description {
+            font-size: 2.9vw;
+          }
+        }
+      }
+    }
+
+    @media only screen and (max-width: 1026px) {
+      .modal {
+        margin-right: 20vw;
+        margin-left: 20vw;
+        margin-top: 3vw;
+      }
+    }
+
+    .modal.open {
+      display: block;
+    }
+
+    .headshotsContainer.isPopUp {
+      display: none;
+    }
+
     .headshotsContainer {
+      // height: 40vw;
       // margin-top: 30px;
       margin-top: 2vw;
       // padding-left: 150px;
@@ -137,8 +202,10 @@
         }
     
         .headshot_img {
+          align-self: center;
           // height: 250px;
           height: 15vw;
+          cursor: pointer;
           // width: auto;
           user-select: none;
           border-radius: 50%;
@@ -339,7 +406,7 @@
     }
 
     @media only screen and (max-width: 1026px) {
-      .previous_work_text {
+      .contact_us_text {
         font-size: 5vw;
       }
     }
@@ -374,7 +441,7 @@
           font-size: 4vw;
         }
       }
-  
     }
   }
 }
+
